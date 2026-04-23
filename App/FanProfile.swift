@@ -56,4 +56,3 @@ struct FanProfile: Codable, Identifiable, Equatable {
         Set(presets.map(\.id))
     }
 }
-

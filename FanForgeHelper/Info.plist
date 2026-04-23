@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>CFBundleIdentifier</key>
-    <string>com.adityagandhi.FanForge.helper</string>
+    <string>com.yourname.FanForge.helper</string>
     <key>CFBundleName</key>
     <string>FanForgeHelper</string>
     <key>CFBundlePackageType</key>
@@ -14,13 +14,12 @@
     <string>1</string>
     <key>MachServices</key>
     <dict>
-        <key>com.adityagandhi.FanForge.helper</key>
+        <key>com.yourname.FanForge.helper</key>
         <true/>
     </dict>
     <key>SMAuthorizedClients</key>
     <array>
-        <string>identifier "com.adityagandhi.FanForge" and anchor apple generic</string>
+        <string>identifier "com.yourname.FanForge" and anchor apple generic</string>
     </array>
 </dict>
 </plist>
-

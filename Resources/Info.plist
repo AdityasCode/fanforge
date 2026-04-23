@@ -16,8 +16,8 @@
     <string>NSApplication</string>
     <key>SMPrivilegedExecutables</key>
     <dict>
-        <key>com.adityagandhi.FanForge.helper</key>
-        <string>identifier "com.adityagandhi.FanForge.helper" and anchor apple generic</string>
+        <key>com.yourname.FanForge.helper</key>
+        <string>identifier "com.yourname.FanForge.helper" and anchor apple generic</string>
     </dict>
 </dict>
 </plist>

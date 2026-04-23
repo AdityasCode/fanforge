@@ -1,6 +1,6 @@
 import Foundation
 
-let fanForgeHelperMachServiceName = "com.adityagandhi.FanForge.helper"
+let fanForgeHelperMachServiceName = "com.yourname.FanForge.helper"
 
 @objc protocol FanForgeHelperProtocol {
     func setFanSpeed(fanIndex: Int, rpm: Float, reply: @escaping (Bool, String?) -> Void)
@@ -8,4 +8,3 @@ let fanForgeHelperMachServiceName = "com.adityagandhi.FanForge.helper"
     func resetAllFans(reply: @escaping (Bool, String?) -> Void)
     func getVersion(reply: @escaping (String) -> Void)
 }
-

@@ -1,6 +1,6 @@
 import Foundation
 
-public extension FanController {
+extension FanController {
     var statusBarLabel: String {
         guard !fans.isEmpty else {
             return "≋ Auto"

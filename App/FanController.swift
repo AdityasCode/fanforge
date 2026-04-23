@@ -27,25 +27,20 @@ final class FanController: ObservableObject {
     private let connection: SMCConnection
     private let reader: SMCReader
 #if DEBUG_NO_HELPER
+    private let helperConnection: HelperConnection? = nil
     private let writer: SMCWriter
 #else
     private let helperConnection: HelperConnection
 #endif
 
-    init(
-        connection: SMCConnection,
-#if DEBUG_NO_HELPER
-        helperConnection: HelperConnection? = nil
-#else
-        helperConnection: HelperConnection = HelperConnection()
-#endif
-    ) {
+    init(connection: SMCConnection) {
         self.connection = connection
         self.reader = SMCReader(connection: connection)
 #if DEBUG_NO_HELPER
+        // helperConnection remains nil in DEBUG_NO_HELPER mode.
         self.writer = SMCWriter(connection: connection)
 #else
-        self.helperConnection = helperConnection
+        self.helperConnection = HelperConnection()
 #endif
     }
 

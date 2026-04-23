@@ -68,4 +68,3 @@ let listener = NSXPCListener(machServiceName: fanForgeHelperMachServiceName)
 listener.delegate = delegate
 listener.resume()
 RunLoop.current.run()
-
